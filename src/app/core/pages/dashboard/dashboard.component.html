@@ -1,3 +1,12 @@
-<p>dashboard works!</p>
-
-<a mat-raised-button> hola</a>
+<section class="dashboard__container">
+    <div class="container__content">
+      <h1 class="content__header">Welcome to <span class="text--red">MedicalPlatform</span></h1>
+      <ul class="content__buttons-list">
+        <li class="buttons-list__item">
+          <a mat-raised-button routerLink="/amodule" color="primary">Patient</a>
+        </li>
+      </ul>
+    </div>
+    <router-outlet></router-outlet>
+  </section>
+  
