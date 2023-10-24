@@ -4,6 +4,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { RoutingModule } from '../routing.module';
 import { CoreRoutingModule } from './core-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -12,7 +13,7 @@ import { SharedModule } from '../shared/shared.module';
     DashboardComponent
   ],
   imports: [SharedModule,
-    CommonModule, RoutingModule
+    CommonModule, RoutingModule,RouterModule
   ],
   exports: [CoreRoutingModule]
 })
