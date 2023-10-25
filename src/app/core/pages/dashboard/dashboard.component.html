@@ -1,12 +1,16 @@
-<section class="dashboard__container">
-    <div class="container__content">
-      <h1 class="content__header">Welcome to <span class="text--red">MedicalPlatform</span></h1>
-      <ul class="content__buttons-list">
-        <li class="buttons-list__item">
-          <a mat-raised-button routerLink="/amodule" color="primary">Patient</a>
-        </li>
-      </ul>
-    </div>
-    <router-outlet></router-outlet>
-  </section>
-  
+
+
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
+<router-outlet></router-outlet>
